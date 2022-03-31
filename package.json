@@ -1,0 +1,29 @@
+{
+  "name": "task-3",
+  "version": "0.0.1",
+  "description": "Custom endpoint for weather forecasting",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GiacomoMaino/Task-3.git"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "REST"
+  ],
+  "author": "Giacomo Maino",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GiacomoMaino/Task-3/issues"
+  },
+  "homepage": "https://github.com/GiacomoMaino/Task-3#readme",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "express": "^4.17.3",
+    "luxon": "^2.3.1"
+  }
+}
