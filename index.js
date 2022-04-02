@@ -29,9 +29,13 @@ app.get('/weather', (req, res) => {
     const now       = DateTime.now()
     const today     = DateTime.fromISO(now.toISODate())
 
-    if(today.plus({days:5}) < to_search && today.minus({days: 5}) > to_search)
+    if(today.plus({days:5}) < to_search)
     {
-        res.send({"status": 410, "statusText": "Gone"})
+        res.status(404).send({"message": "Requested day was over the limit"})
+    }
+    if(today.minus({days: 5}) > to_search)
+    {
+        res.status(410).send({"message": "Requested day was below the limit"})
     }
 
     let forecast = null
